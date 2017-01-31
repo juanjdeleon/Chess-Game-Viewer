@@ -1,0 +1,20 @@
+uuid: 68644029-a7e2-4440-b9ea-e0c5fce00138
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_white_elo
+field_name: field_white_elo
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

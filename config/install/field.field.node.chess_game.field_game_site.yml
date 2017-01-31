@@ -1,0 +1,19 @@
+uuid: 0b0e1637-bad6-4efb-9b05-824d1c895dcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_game_site
+    - node.type.chess_game
+id: node.chess_game.field_game_site
+field_name: field_game_site
+entity_type: node
+bundle: chess_game
+label: Site
+description: 'Where the game took place.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

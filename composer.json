@@ -1,0 +1,14 @@
+{
+  "name": "drupal/chess_game_viewer",
+  "type": "drupal-module",
+  "description": "Displays a chess board beside its move list based on a PGN file.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/chess_game_viewer",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/chess_game_viewer",
+    "source": "http://cgit.drupalcode.org/chess_game_viewer"
+  },
+  "require": { }
+}

@@ -1,0 +1,27 @@
+uuid: bbb8e99d-69ac-484a-879d-3eea8130adb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pgn_file
+    - node.type.chess_game
+  module:
+    - file
+id: node.chess_game.field_pgn_file
+field_name: field_pgn_file
+entity_type: node
+bundle: chess_game
+label: 'PGN File'
+description: 'Portable Game Notation file containing the move list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pgn
+  file_extensions: pgn
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

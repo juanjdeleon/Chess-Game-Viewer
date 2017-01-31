@@ -1,0 +1,23 @@
+uuid: 4c4251bc-cee4-4854-b321-10d2b8e0d268
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_game_round
+    - node.type.chess_game
+id: node.chess_game.field_game_round
+field_name: field_game_round
+entity_type: node
+bundle: chess_game
+label: Round
+description: 'Number of the playing round within the event.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

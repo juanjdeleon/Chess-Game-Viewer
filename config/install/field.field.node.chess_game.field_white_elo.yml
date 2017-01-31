@@ -1,0 +1,23 @@
+uuid: 3e05f9c8-e017-4660-a9bc-1ecd1d2e9e09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_white_elo
+    - node.type.chess_game
+id: node.chess_game.field_white_elo
+field_name: field_white_elo
+entity_type: node
+bundle: chess_game
+label: 'White ELO'
+description: 'White player ELO points.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

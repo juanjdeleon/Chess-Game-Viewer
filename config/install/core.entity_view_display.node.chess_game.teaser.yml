@@ -1,0 +1,27 @@
+uuid: 55938c71-c204-41c0-91c2-ce88d9fd3e4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.chess_game.body
+    - node.type.chess_game
+  module:
+    - text
+    - user
+id: node.chess_game.teaser
+targetEntityType: node
+bundle: chess_game
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true

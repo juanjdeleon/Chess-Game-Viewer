@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains chess_game_viewer.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function chess_game_viewer_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the chess_game_viewer module.
+    case 'help.page.chess_game_viewer':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Displays a chess board beside its move list based on a PGN file.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function chess_game_viewer_theme() {
+  return [
+    'chess_game_viewer' => [
+      'template' => 'chess_game_viewer',
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,104 @@
+uuid: 8b211302-803f-4fc6-b729-b101fb48931d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.chess_game.body
+    - field.field.node.chess_game.field_black_elo
+    - field.field.node.chess_game.field_black_name
+    - field.field.node.chess_game.field_event
+    - field.field.node.chess_game.field_game_date
+    - field.field.node.chess_game.field_game_round
+    - field.field.node.chess_game.field_game_site
+    - field.field.node.chess_game.field_pgn_file
+    - field.field.node.chess_game.field_white_elo
+    - field.field.node.chess_game.field_white_name
+    - node.type.chess_game
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.chess_game.default
+targetEntityType: node
+bundle: chess_game
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_black_elo:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_black_name:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_event:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_game_date:
+    weight: 8
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_game_round:
+    weight: 6
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_game_site:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_pgn_file:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_white_elo:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_white_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

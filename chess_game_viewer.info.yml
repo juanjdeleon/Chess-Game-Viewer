@@ -1,0 +1,5 @@
+name: Chess Game Viewer
+type: module
+description: Displays a chess board beside its move list based on a PGN file.
+core: 8.x
+package: Chess

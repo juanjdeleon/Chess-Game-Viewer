@@ -1,0 +1,21 @@
+uuid: f2c8303f-8a95-4722-bce0-563d46d2a314
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_game_date
+    - node.type.chess_game
+  module:
+    - datetime
+id: node.chess_game.field_game_date
+field_name: field_game_date
+entity_type: node
+bundle: chess_game
+label: Date
+description: 'Starting date of the game.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

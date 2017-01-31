@@ -1,0 +1,23 @@
+uuid: 297ffd90-e532-4311-8144-a2414eb8d1b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_black_elo
+    - node.type.chess_game
+id: node.chess_game.field_black_elo
+field_name: field_black_elo
+entity_type: node
+bundle: chess_game
+label: 'Black ELO'
+description: 'Black player ELO points.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
