@@ -1,14 +1,9 @@
-uuid: c7455059-6bbd-4b73-bfca-d93dccca4c3f
 langcode: en
 status: true
 dependencies:
-  module:
-    - menu_ui
-third_party_settings:
-  menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+  enforced:
+    module:
+      - chess_game_viewer
 name: 'Chess Game'
 type: chess_game
 description: 'Stores data of a chess game extracted from a PGN file.'

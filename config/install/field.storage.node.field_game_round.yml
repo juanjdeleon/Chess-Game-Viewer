@@ -1,9 +1,11 @@
-uuid: 4016713e-2e78-4bc5-8570-a97d4ee3a320
 langcode: en
 status: true
 dependencies:
   module:
     - node
+  enforced:
+    module:
+      - chess_game_viewer
 id: node.field_game_round
 field_name: field_game_round
 entity_type: node
@@ -12,7 +14,7 @@ settings:
   unsigned: false
   size: normal
 module: core
-locked: false
+locked: true
 cardinality: 1
 translatable: true
 indexes: {  }

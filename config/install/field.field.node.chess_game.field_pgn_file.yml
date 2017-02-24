@@ -1,4 +1,3 @@
-uuid: bbb8e99d-69ac-484a-879d-3eea8130adb7
 langcode: en
 status: true
 dependencies:
@@ -7,6 +6,9 @@ dependencies:
     - node.type.chess_game
   module:
     - file
+  enforced:
+    module:
+      - chess_game_viewer
 id: node.chess_game.field_pgn_file
 field_name: field_pgn_file
 entity_type: node

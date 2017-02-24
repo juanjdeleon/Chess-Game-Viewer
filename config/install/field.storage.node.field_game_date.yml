@@ -1,10 +1,12 @@
-uuid: 5e5a32c9-c22c-44b5-b960-ebf4ff0713fb
 langcode: en
 status: true
 dependencies:
   module:
     - datetime
     - node
+  enforced:
+    module:
+      - chess_game_viewer
 id: node.field_game_date
 field_name: field_game_date
 entity_type: node
@@ -12,7 +14,7 @@ type: datetime
 settings:
   datetime_type: date
 module: datetime
-locked: false
+locked: true
 cardinality: 1
 translatable: true
 indexes: {  }

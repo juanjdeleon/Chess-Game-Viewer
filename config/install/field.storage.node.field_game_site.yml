@@ -1,9 +1,11 @@
-uuid: d2633d48-d116-4a88-b7c8-d405b6ea650e
 langcode: en
 status: true
 dependencies:
   module:
     - node
+  enforced:
+    module:
+      - chess_game_viewer
 id: node.field_game_site
 field_name: field_game_site
 entity_type: node
@@ -13,7 +15,7 @@ settings:
   is_ascii: false
   case_sensitive: false
 module: core
-locked: false
+locked: true
 cardinality: 1
 translatable: true
 indexes: {  }

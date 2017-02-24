@@ -1,9 +1,11 @@
-uuid: 68644029-a7e2-4440-b9ea-e0c5fce00138
 langcode: en
 status: true
 dependencies:
   module:
     - node
+  enforced:
+    module:
+      - chess_game_viewer
 id: node.field_white_elo
 field_name: field_white_elo
 entity_type: node
@@ -12,7 +14,7 @@ settings:
   unsigned: false
   size: normal
 module: core
-locked: false
+locked: true
 cardinality: 1
 translatable: true
 indexes: {  }

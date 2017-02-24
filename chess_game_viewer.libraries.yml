@@ -1,0 +1,10 @@
+chessboardjs:
+  version: "3.0.x"
+  js:
+    /libraries/chessboardjs/js/chessboard.min.js: { minified: true }
+  css:
+    theme:
+      /libraries/chessboardjs/css/chessboard.min.css: { minified: true }
+  dependencies:
+    - core/jquery
+ 

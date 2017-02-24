@@ -1,4 +1,3 @@
-uuid: f2c8303f-8a95-4722-bce0-563d46d2a314
 langcode: en
 status: true
 dependencies:
@@ -7,6 +6,9 @@ dependencies:
     - node.type.chess_game
   module:
     - datetime
+  enforced:
+    module:
+      - chess_game_viewer
 id: node.chess_game.field_game_date
 field_name: field_game_date
 entity_type: node

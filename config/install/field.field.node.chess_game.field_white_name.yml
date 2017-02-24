@@ -1,10 +1,12 @@
-uuid: f1f61f21-5abe-4f3a-8687-f60049c3c9f6
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_white_name
     - node.type.chess_game
+  enforced:
+    module:
+      - chess_game_viewer
 id: node.chess_game.field_white_name
 field_name: field_white_name
 entity_type: node

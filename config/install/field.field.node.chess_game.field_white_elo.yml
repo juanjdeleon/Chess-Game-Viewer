@@ -1,10 +1,12 @@
-uuid: 3e05f9c8-e017-4660-a9bc-1ecd1d2e9e09
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_white_elo
     - node.type.chess_game
+  enforced:
+    module:
+      - chess_game_viewer
 id: node.chess_game.field_white_elo
 field_name: field_white_elo
 entity_type: node
