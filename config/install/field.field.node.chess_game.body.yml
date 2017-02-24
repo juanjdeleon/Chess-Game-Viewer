@@ -10,8 +10,8 @@ id: node.chess_game.body
 field_name: body
 entity_type: node
 bundle: chess_game
-label: Body
-description: ''
+label: 'Game description'
+description: 'Description or notes about this game.'
 required: false
 translatable: true
 default_value: {  }
