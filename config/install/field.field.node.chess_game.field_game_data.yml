@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_game_data
+    - node.type.chess_game
+  enforced:
+    module:
+      - chess_game_viewer
+id: node.chess_game.field_game_data
+field_name: field_game_data
+entity_type: node
+bundle: chess_game
+label: 'Game data'
+description: 'JSON array with the game data. This field must be read only.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

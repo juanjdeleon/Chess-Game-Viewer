@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 
 /**
  * Implements hook_help().
@@ -33,4 +35,35 @@ function chess_game_viewer_theme() {
       'render element' => 'children',
     ],
   ];
+}
+
+/**
+ * Implements hook_entity_view().
+ */
+function chess_game_viewer_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+	// Render PGN file field via chess_game_viewer theme implementation
+	$build['field_pgn_file']['#theme'] = 'chess_game_viewer';
+	
+	/*dsm($entity);
+	dsm($display);
+	dsm($view_mode);*/
+}
+
+/**
+ * Implements hook_entity_presave
+ */
+function chess_game_viewer_node_presave(EntityInterface $entity) {
+	try {
+		//$parser = new PgnParser();
+		
+		//dsm($entity->get('field_pgn_file')->getUploadLocation());
+		//dsm($entity);
+		dsm($entity->field_pgn_file);
+		dsm($entity->field_pgn_file[0]->getUploadLocation());
+		
+		//$entity->field_game_data = $parser->parse($entity->xd);
+	}
+	catch (Exception $ex) {
+		drupal_set_message('Cannot render the PGN file into readable array. Please check if the PGN Parser library is properly installed and that provided file has valid PGN data.', 'error');
+	}
 }
